@@ -527,7 +527,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
-# override lineageOS 
+# override lineageOSnoLOSEmail
 include $(CLEAR_VARS)
 LOCAL_MODULE := noLOSEmail
 LOCAL_SRC_FILES := empty.apk
@@ -539,7 +539,7 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_OVERRIDES_PACKAGES := Email 
 include $(BUILD_PREBUILT)
 
-# override lineageOS 
+# override lineageOS Messaging
 include $(CLEAR_VARS)
 LOCAL_MODULE := noLOSMessaging
 LOCAL_SRC_FILES := empty.apk
@@ -548,18 +548,30 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_OVERRIDES_PACKAGES := Messaging
+LOCAL_OVERRIDES_PACKAGES := messaging
 include $(BUILD_PREBUILT)
 
-# override lineageOS 
+# override lineageOS Snap
 include $(CLEAR_VARS)
-LOCAL_MODULE := noLOSCamera2
+LOCAL_MODULE := noLOSSnap
 LOCAL_SRC_FILES := empty.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_OVERRIDES_PACKAGES := Camera2
+LOCAL_OVERRIDES_PACKAGES := Snap
+include $(BUILD_PREBUILT)
+
+ # override lineageOS Jelly
+include $(CLEAR_VARS)
+LOCAL_MODULE := noLOSJelly
+LOCAL_SRC_FILES := empty.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_OVERRIDES_PACKAGES := Jelly
 include $(BUILD_PREBUILT)
  
