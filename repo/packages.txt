@@ -37,7 +37,6 @@ com.aurora.store_LATEST.apk|FDROIDREPO|app|AuroraStore.apk;PRESIGNED|true
 # Allow Aurora Store to install updates automatically
 AuroraServices_v1.1.1.apk|https://gitlab.com/AuroraOSS/AuroraServices/uploads/c22e95975571e9db143567690777a56e/|priv-app|AuroraServices.apk;PRESIGNED|false||permissions_com.aurora.services.xml
 
-
 # AdAway
 org.adaway_LATEST.apk|FDROIDREPO|priv-app|AdAway.apk;PRESIGNED|false
 
@@ -110,6 +109,9 @@ at.bitfire.davdroid_LATEST.apk|FDROIDREPO|app|DAVx5.apk;PRESIGNED|true
 
 # NextCloud Sync client
 com.nextcloud.client_LATEST.apk|FDROIDREPO|app|NextCloud.apk;PRESIGNED|true
+
+# Bromite Browser
+arm64_ChromePublic.apk|https://github.com/bromite/bromite/releases/download/102.0.5005.67|app|Bromite.apk;PRESIGNED|false
 
 ##########################################################################################################
 # OFFICE
