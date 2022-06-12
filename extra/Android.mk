@@ -1,5 +1,16 @@
 LOCAL_PATH := $(call my-dir)
 
+# Microg F-Droid repos
+include $(CLEAR_VARS)
+LOCAL_MODULE := microg_repos.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/org.fdroid.fdroid
+LOCAL_OVERRIDES_PACKAGES := additional_repos.xml
+LOCAL_SRC_FILES := microg_repos.xml
+#LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
+
 # Bromite F-Droid repos
 include $(CLEAR_VARS)
 LOCAL_MODULE := bromite_repos.xml
@@ -7,7 +18,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_ETC)/org.fdroid.fdroid
 LOCAL_OVERRIDES_PACKAGES := additional_repos.xml
-LOCAL_SRC_FILES := additional_repos.xml
+LOCAL_SRC_FILES := bromite_repos.xml
 #LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
