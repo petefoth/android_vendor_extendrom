@@ -57,7 +57,7 @@ com.google.android.gms-LATEST.apk|https://microg.org/fdroid/repo/|priv-app|Micro
 org.microg.gms.droidguard-LATEST.apk|https://microg.org/fdroid/repo/|app|DroidGuard.apk;PRESIGNED|false 
 
 # FakeStore
-com.android.vending-16.apk|https://microg.org/fdroid/repo/|priv-app|FakeStore.apk;PRESIGNED|false||privapp-permissions-com.android.vending.xml;default-permissions-com.android.vending.xml
+com.android.vending-16.apk|https://microg.org/fdroid/repo/|priv-app|FakeStore.apk;PRESIGNED|false||extendrom_privapp-permissions-com.android.vending.xml;extendrom_default-permissions-com.android.vending.xml
 
 # NominatimBackend
 org.microg.nlp.backend.nominatim_LATEST.apk|FDROIDREPO|app|NominatimBackend.apk;PRESIGNED|false
