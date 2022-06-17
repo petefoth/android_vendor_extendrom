@@ -601,15 +601,15 @@ include $(BUILD_PREBUILT)
  
 # Permissions for microG FakeStore
 include $(CLEAR_VARS)
-LOCAL_MODULE := privapp-permissions-com.android.vending.xml
+LOCAL_MODULE := extendrom_privapp-permissions-com.android.vending.xml
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/permissions
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_SRC_FILES := permissions-com.android.vending.xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := default-permissions-com.android.vending.xml
+LOCAL_MODULE := extendrom_default-permissions-com.android.vending.xml
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/default-permissions
-LOCAL_SRC_FILES := $(LOCAL_MODULE)
+LOCAL_SRC_FILES := default-permissions-com.android.vending.xml
 include $(BUILD_PREBUILT)
